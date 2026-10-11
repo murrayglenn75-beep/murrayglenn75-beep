@@ -26,6 +26,10 @@ Architecture-first · Deterministic controls · Secure agents · Product deliver
 **Live product examples:** [Fluxo sandbox](https://fluxo-fintech-xi.vercel.app/) · [Signet demo — sign-in required](https://signet-chi.vercel.app/)  
 *Demonstrations are not claims of production integration, regulatory approval or external security certification.*
 
+### Independent verification
+
+**Review the implementation, not just the screenshots.** [Independent engineering review guide](REVIEW_GUIDE.md) explains how to inspect each flagship project, run available checks and distinguish local evidence from production assurance.
+
 ### Engineering work at a glance
 
 <table>
