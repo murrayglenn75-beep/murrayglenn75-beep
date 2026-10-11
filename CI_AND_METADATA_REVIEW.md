@@ -39,3 +39,15 @@ No license was recognized in repository metadata for the six reviewed repositori
 3. Add small, reproducible walkthroughs or screenshots with accessible captions.
 4. Add license files and repository topics only after confirming the intended distribution policy.
 5. Track external bugs and accepted contributions separately from self-reported benchmarks.
+
+## Diagnosed failing steps (2026-10-11)
+
+### Brain AI evidence check
+
+The failed `verify-public-evidence` job reported `PASS: R-013 published arithmetic and disclosure metadata`, followed by `FAIL: Public manifest mismatch`. The reported missing manifest entry is `.github/workflows/security-baseline.yml`; there were no extra or changed hashes in that particular log result. This suggests regenerating the manifest using the repository's intended generator and verifying it in CI, **not** disabling hash checks or weakening the validation. [Review failed run](https://github.com/murrayglenn75-beep/Brain-AI/actions/runs/38110442700).
+
+### Glenn Murray Portfolio npm audit
+
+The failed `security-baseline` job's production dependency audit reported **five advisories (four high, one critical)** in its resolved tree, mentioning Next.js-related dependencies, PostCSS, sharp and source-map-js. The log suggested `next@15.5.27` for some forced fixes; upgrading outside the declared dependency range must be evaluated and tested before committing. **Do not suppress the failing audit merely to turn CI green.** [Review failed run](https://github.com/murrayglenn75-beep/glenn-murray-portfolio/actions/runs/38110446430).
+
+Neither issue is marked resolved by this report; fixes require source changes and fresh successful checks.
