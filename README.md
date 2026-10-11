@@ -23,7 +23,9 @@ Architecture-first · Deterministic controls · Secure agents · Product deliver
 | **Forward Deployed / Full-stack Product** | [Fluxo](https://github.com/murrayglenn75-beep/fluxo) | Fintech sandbox UI, integer money logic, idempotency, review boundaries, tests and mobile packaging |
 | **Reliability / Systems Architecture** | [Signet](https://github.com/murrayglenn75-beep/signet) | Deterministic state, traceable event history and separation of operational facts from AI narration |
 
-**Live product examples:** [Fluxo sandbox](https://fluxo-fintech-xi.vercel.app/) · [Signet demo — sign-in required](https://signet-chi.vercel.app/)  
+**Live product examples:** [Fluxo fintech sandbox](https://fluxo-fintech-xi.vercel.app/) · [Signet demo — sign-in required](https://signet-chi.vercel.app/)
+
+*Deployment verification (11 Oct 2026): Both product aliases were reported READY by Vercel. Fluxo also has a separate [alternate deployment](https://fluxo-alpha-henna.vercel.app/). READY is a deployment state, not proof of end-to-end functionality.*  
 *Demonstrations are not claims of production integration, regulatory approval or external security certification.*
 
 ### Independent verification
