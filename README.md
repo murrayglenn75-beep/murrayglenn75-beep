@@ -32,6 +32,8 @@ Architecture-first · Deterministic controls · Secure agents · Product deliver
 
 **Review the implementation, not just the screenshots.** [Independent engineering review guide](REVIEW_GUIDE.md) explains how to inspect each flagship project, run available checks and distinguish local evidence from production assurance.
 
+**Engineering evidence scorecard:** [Current verification gaps, graduation gates and autonomous-agent benchmark](ENGINEERING_EVIDENCE_SCORECARD.md). This distinguishes public code from independently validated outcomes.
+
 **CI evidence and repository metadata:** [Review current checks, failures, suggested topics and licensing decisions](CI_AND_METADATA_REVIEW.md). Statuses are dated observations, not automatic proof of production readiness.
 
 ### Engineering work at a glance
